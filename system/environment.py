@@ -8,12 +8,16 @@ class MainContainer(Static):
     """PLACEHOLDER"""
 
     def compose(self) -> ComposeResult:
-        with Horizontal():
-            with Collapsible(title="File Browser"):
-              yield DirectoryTree("C:/")
-            yield Rule(orientation="vertical", line_style="solid")
-            with Collapsible(title="Edit File"):
-                yield Label("coming soon 👀")
+        yield OptionList(
+            Option("Applications", disabled=True),
+            Option("Dock"),
+            Separator(),
+            Option("System", disabled=True),
+            Option("Settings"),
+            Option("Terminal"),
+            Option("Directory"),
+            Separator(),
+        )
 
     
         
