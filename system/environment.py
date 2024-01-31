@@ -11,10 +11,10 @@ class MainContainer(Static):
         yield OptionList(
             Option("Applications", disabled=True),
             Option("Dock"),
+            Option("Terminal"),
             Separator(),
             Option("System", disabled=True),
             Option("Settings"),
-            Option("Terminal"),
             Option("Directory"),
             Separator(),
         )
