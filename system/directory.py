@@ -18,7 +18,7 @@ class MainContainer(Static):
     
         
 
-class FileSystemApp(App):
+class DirectoryApp(App):
     """PLACEHOLDER"""
 
     # Define UI functions
@@ -31,6 +31,7 @@ class FileSystemApp(App):
     # Define mounting function
     def on_mount(self) -> None:
         self.title = "Wyvern"
+        self.sub_title = "Directory"
 
     # Define event functions
         
