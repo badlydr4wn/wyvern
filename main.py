@@ -1,7 +1,3 @@
-from textual.app import *
-from system.environment import EnvironmentApp
-from system.directory import DirectoryApp
-# from system.terminal import TerminalApp
+from system.sysloader import *
 
-if __name__ == "__main__":
-    EnvironmentApp().run()
+# load(0)

@@ -17,6 +17,7 @@ class MainContainer(Static):
             Option("Settings"),
             Option("Directory"),
             Separator(),
+            Option("Exit")
         )
 
 class EnvironmentApp(App):
