@@ -35,7 +35,7 @@ class EnvironmentApp(App):
         self.title = "Environment"
 
     # Define event functions
-    def on_option_list_option_selected(self, event: OptionList.OptionSelected()):
-        self.notify("yo",title="notif")
+    def on_option_list_option_selected(self, event: OptionList.OptionSelected):
+        self.notify(f"yo - {event.option_index}", title="notif")
         
     # Define keybind functions
