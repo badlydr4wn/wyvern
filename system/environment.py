@@ -19,9 +19,6 @@ class MainContainer(Static):
             Separator(),
         )
 
-    
-        
-
 class EnvironmentApp(App):
     """PLACEHOLDER"""
 
@@ -38,5 +35,7 @@ class EnvironmentApp(App):
         self.title = "Environment"
 
     # Define event functions
+    def on_option_selected(self, event:OptionList.OptionSelected) -> None:
+        self.notify(event.option_index, title="option selected")
         
     # Define keybind functions
