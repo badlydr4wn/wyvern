@@ -26,7 +26,7 @@ class EnvironmentApp(App):
     def compose(self) -> ComposeResult:
         """PLACEHOLDER"""
         yield Header()
-        yield Container(MainContainer())
+        yield ScrollableContainer(MainContainer())
         yield Footer()
 
     # Define mounting function
@@ -36,6 +36,6 @@ class EnvironmentApp(App):
 
     # Define event functions
     def on_option_list_option_selected(self, event: OptionList.OptionSelected):
-        self.notify(f"yo - {event.option_index}", title="notif")
+        self.notify(f"y{event.option_index}", title="option!!!")
         
     # Define keybind functions
